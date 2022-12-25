@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>AddCardViewModel</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>app</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="app::com.kalbe.cakraloyalty.presentation.page.brand.card/AddCardViewModel///PointingToDeclaration//168881717">
+  <div class="breadcrumbs"><a href="../../../index.html">app</a><span class="delimiter">/</span><a href="../index.html">com.kalbe.cakraloyalty.presentation.page.brand.card</a><span class="delimiter">/</span><span class="current">AddCardViewModel</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Add</span><wbr></wbr><span>Card</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Model</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">AddCardViewModel</a> <span><span class="token annotation builtin">@</span><span data-unresolved-link="javax.inject/Inject///PointingToDeclaration/"><span class="token annotation builtin">Inject</span></span> </span><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sessionManager<span class="token operator">: </span><span data-unresolved-link="com.kalbe.cakraloyalty.core.data.source.local.session/SessionManager///PointingToDeclaration/">SessionManager</span><span class="token punctuation">, </span></span><span class="parameter ">addCardByNumberUseCase<span class="token operator">: </span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.usecase.card/AddCardByNumberUseCase///PointingToDeclaration/">AddCardByNumberUseCase</span><span class="token punctuation">, </span></span><span class="parameter ">merchantRepository<span class="token operator">: </span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.repository/IMerchantRepository///PointingToDeclaration/">IMerchantRepository</span><span class="token punctuation">, </span></span><span class="parameter ">userCardRepository<span class="token operator">: </span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.repository/IUserCardRepository///PointingToDeclaration/">IUserCardRepository</span><span class="token punctuation">, </span></span><span class="parameter ">clientRepository<span class="token operator">: </span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.repository/IClientRepository///PointingToDeclaration/">IClientRepository</span><span class="token punctuation">, </span></span><span class="parameter ">memberRepository<span class="token operator">: </span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.repository/IMemberRepository///PointingToDeclaration/">IMemberRepository</span></span></span><span class="token punctuation">)</span> : <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel.html">ViewModel</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Extensions">Extensions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="-617537352%2FConstructors%2F168881717" anchor-label="AddCardViewModel" id="-617537352%2FConstructors%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-add-card-view-model.html"><span>Add</span><wbr></wbr><span>Card</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-617537352%2FConstructors%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="javax.inject/Inject///PointingToDeclaration/"><span class="token annotation builtin">Inject</span></span></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="-add-card-view-model.html"><span class="token function">AddCardViewModel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sessionManager<span class="token operator">: </span><span data-unresolved-link="com.kalbe.cakraloyalty.core.data.source.local.session/SessionManager///PointingToDeclaration/">SessionManager</span><span class="token punctuation">, </span></span><span class="parameter ">addCardByNumberUseCase<span class="token operator">: </span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.usecase.card/AddCardByNumberUseCase///PointingToDeclaration/">AddCardByNumberUseCase</span><span class="token punctuation">, </span></span><span class="parameter ">merchantRepository<span class="token operator">: </span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.repository/IMerchantRepository///PointingToDeclaration/">IMerchantRepository</span><span class="token punctuation">, </span></span><span class="parameter ">userCardRepository<span class="token operator">: </span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.repository/IUserCardRepository///PointingToDeclaration/">IUserCardRepository</span><span class="token punctuation">, </span></span><span class="parameter ">clientRepository<span class="token operator">: </span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.repository/IClientRepository///PointingToDeclaration/">IClientRepository</span><span class="token punctuation">, </span></span><span class="parameter ">memberRepository<span class="token operator">: </span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.repository/IMemberRepository///PointingToDeclaration/">IMemberRepository</span></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="670272917%2FClasslikes%2F168881717" anchor-label="Companion" id="670272917%2FClasslikes%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="670272917%2FClasslikes%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="1335420359%2FFunctions%2F168881717" anchor-label="addCard" id="1335420359%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="add-card.html"><span>add</span><wbr></wbr><span><span>Card</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1335420359%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-card.html"><span class="token function">addCard</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">password<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1197873049%2FFunctions%2F168881717" anchor-label="addCardByNumber" id="-1197873049%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="add-card-by-number.html"><span>add</span><wbr></wbr><span>Card</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Number</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1197873049%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-card-by-number.html"><span class="token function">addCardByNumber</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cardNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="264516373%2FFunctions%2F168881717" anchor-label="addCloseable" id="264516373%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.kalbe.cakraloyalty.presentation.page.splash/-splash-view-model/index.html#264516373%2FFunctions%2F168881717"><span>add</span><wbr></wbr><span><span>Closeable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="264516373%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.kalbe.cakraloyalty.presentation.page.splash/-splash-view-model/index.html#264516373%2FFunctions%2F168881717"><span class="token function">addCloseable</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a> </span>p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="730286985%2FFunctions%2F168881717" anchor-label="clickedForgotPassword" id="730286985%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="clicked-forgot-password.html"><span>clicked</span><wbr></wbr><span>Forgot</span><wbr></wbr><span><span>Password</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="730286985%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="clicked-forgot-password.html"><span class="token function">clickedForgotPassword</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2141356578%2FFunctions%2F168881717" anchor-label="getActiveCard" id="2141356578%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-active-card.html"><span>get</span><wbr></wbr><span>Active</span><wbr></wbr><span><span>Card</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2141356578%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-active-card.html"><span class="token function">getActiveCard</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.model.merchant/Card///PointingToDeclaration/">Card</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1092809465%2FFunctions%2F168881717" anchor-label="getBonusPoint" id="-1092809465%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-bonus-point.html"><span>get</span><wbr></wbr><span>Bonus</span><wbr></wbr><span><span>Point</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1092809465%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-bonus-point.html"><span class="token function">getBonusPoint</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1417845008%2FFunctions%2F168881717" anchor-label="getBrandName" id="1417845008%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-brand-name.html"><span>get</span><wbr></wbr><span>Brand</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1417845008%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-brand-name.html"><span class="token function">getBrandName</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1018052983%2FFunctions%2F168881717" anchor-label="getClient" id="1018052983%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-client.html"><span>get</span><wbr></wbr><span><span>Client</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1018052983%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-client.html"><span class="token function">getClient</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientApiKey<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1906971031%2FFunctions%2F168881717" anchor-label="getContent" id="-1906971031%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-content.html"><span>get</span><wbr></wbr><span><span>Content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1906971031%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-content.html"><span class="token function">getContent</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1768580212%2FFunctions%2F168881717" anchor-label="getMerchant" id="1768580212%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-merchant.html"><span>get</span><wbr></wbr><span><span>Merchant</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1768580212%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-merchant.html"><span class="token function">getMerchant</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientApiKey<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1182590478%2FFunctions%2F168881717" anchor-label="getNewCard" id="-1182590478%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-new-card.html"><span>get</span><wbr></wbr><span>New</span><wbr></wbr><span><span>Card</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1182590478%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-new-card.html"><span class="token function">getNewCard</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="707675630%2FFunctions%2F168881717" anchor-label="getReferralCode" id="707675630%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-referral-code.html"><span>get</span><wbr></wbr><span>Referral</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="707675630%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-referral-code.html"><span class="token function">getReferralCode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-916558184%2FFunctions%2F168881717" anchor-label="isUserCompleted" id="-916558184%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-user-completed.html"><span>is</span><wbr></wbr><span>User</span><wbr></wbr><span><span>Completed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-916558184%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-user-completed.html"><span class="token function">isUserCompleted</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="239039329%2FFunctions%2F168881717" anchor-label="listMemberContacts" id="239039329%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="list-member-contacts.html"><span>list</span><wbr></wbr><span>Member</span><wbr></wbr><span><span>Contacts</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="239039329%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="list-member-contacts.html"><span class="token function">listMemberContacts</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="449506350%2FFunctions%2F168881717" anchor-label="loginMemberCard" id="449506350%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="login-member-card.html"><span>login</span><wbr></wbr><span>Member</span><wbr></wbr><span><span>Card</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="449506350%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="login-member-card.html"><span class="token function">loginMemberCard</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cardNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">password<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-720302329%2FFunctions%2F168881717" anchor-label="resetPasswordFailed" id="-720302329%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="reset-password-failed.html"><span>reset</span><wbr></wbr><span>Password</span><wbr></wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-720302329%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="reset-password-failed.html"><span class="token function">resetPasswordFailed</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="300201427%2FFunctions%2F168881717" anchor-label="resetPasswordWithOtp" id="300201427%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="reset-password-with-otp.html"><span>reset</span><wbr></wbr><span>Password</span><wbr></wbr><span>With</span><wbr></wbr><span><span>Otp</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="300201427%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="reset-password-with-otp.html"><span class="token function">resetPasswordWithOtp</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">newPassword<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1070444115%2FFunctions%2F168881717" anchor-label="sendOtpForgotPassword" id="-1070444115%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="send-otp-forgot-password.html"><span>send</span><wbr></wbr><span>Otp</span><wbr></wbr><span>Forgot</span><wbr></wbr><span><span>Password</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1070444115%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="send-otp-forgot-password.html"><span class="token function">sendOtpForgotPassword</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1752038793%2FFunctions%2F168881717" anchor-label="setActiveContactOtp" id="1752038793%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-active-contact-otp.html"><span>set</span><wbr></wbr><span>Active</span><wbr></wbr><span>Contact</span><wbr></wbr><span><span>Otp</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1752038793%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-active-contact-otp.html"><span class="token function">setActiveContactOtp</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contact<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1110576233%2FFunctions%2F168881717" anchor-label="setBonusPoint" id="1110576233%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-bonus-point.html"><span>set</span><wbr></wbr><span>Bonus</span><wbr></wbr><span><span>Point</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1110576233%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-bonus-point.html"><span class="token function">setBonusPoint</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">point<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="623541096%2FFunctions%2F168881717" anchor-label="setBrandName" id="623541096%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-brand-name.html"><span>set</span><wbr></wbr><span>Brand</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="623541096%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-brand-name.html"><span class="token function">setBrandName</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">brandName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="495889457%2FFunctions%2F168881717" anchor-label="setCardNumber" id="495889457%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-card-number.html"><span>set</span><wbr></wbr><span>Card</span><wbr></wbr><span><span>Number</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="495889457%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-card-number.html"><span class="token function">setCardNumber</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cardNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1346959928%2FFunctions%2F168881717" anchor-label="setClientApiKey" id="-1346959928%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-client-api-key.html"><span>set</span><wbr></wbr><span>Client</span><wbr></wbr><span>Api</span><wbr></wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1346959928%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-client-api-key.html"><span class="token function">setClientApiKey</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientApiKey<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-913820434%2FFunctions%2F168881717" anchor-label="setClientName" id="-913820434%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-client-name.html"><span>set</span><wbr></wbr><span>Client</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-913820434%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-client-name.html"><span class="token function">setClientName</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="73563999%2FFunctions%2F168881717" anchor-label="setOtpForgotPassword" id="73563999%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-otp-forgot-password.html"><span>set</span><wbr></wbr><span>Otp</span><wbr></wbr><span>Forgot</span><wbr></wbr><span><span>Password</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="73563999%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-otp-forgot-password.html"><span class="token function">setOtpForgotPassword</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">otp<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="170437098%2FFunctions%2F168881717" anchor-label="setOtpIdentifier" id="170437098%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-otp-identifier.html"><span>set</span><wbr></wbr><span>Otp</span><wbr></wbr><span><span>Identifier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="170437098%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-otp-identifier.html"><span class="token function">setOtpIdentifier</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">identifier<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1817723381%2FFunctions%2F168881717" anchor-label="setUniqueIdOtp" id="1817723381%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-unique-id-otp.html"><span>set</span><wbr></wbr><span>Unique</span><wbr></wbr><span>Id</span><wbr></wbr><span><span>Otp</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1817723381%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-unique-id-otp.html"><span class="token function">setUniqueIdOtp</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">uniqueId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="1033480797%2FProperties%2F168881717" anchor-label="addCard" id="1033480797%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="add-card.html"><span>add</span><wbr></wbr><span><span>Card</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1033480797%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="1033480797%2FProperties%2F168881717" anchor-label="addCard" id="1033480797%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="add-card.html">addCard</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/SharedFlow///PointingToDeclaration/">SharedFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kalbe.cakraloyalty.presentation.state/-ui-state-wrapper/index.html">UiStateWrapper</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.kalbe.cakraloyalty.core.data.source.remote.response.user.card.add/AddCardData///PointingToDeclaration/">AddCardData</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2102050924%2FProperties%2F168881717" anchor-label="addCardByNumberState" id="2102050924%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="add-card-by-number-state.html"><span>add</span><wbr></wbr><span>Card</span><wbr></wbr><span>By</span><wbr></wbr><span>Number</span><wbr></wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2102050924%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="2102050924%2FProperties%2F168881717" anchor-label="addCardByNumberState" id="2102050924%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="add-card-by-number-state.html">addCardByNumberState</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/SharedFlow///PointingToDeclaration/">SharedFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kalbe.cakraloyalty.presentation.state/-ui-state-wrapper/index.html">UiStateWrapper</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.model.auth/AddCardByNumber///PointingToDeclaration/">AddCardByNumber</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1862004299%2FProperties%2F168881717" anchor-label="cardAddedState" id="1862004299%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="card-added-state.html"><span>card</span><wbr></wbr><span>Added</span><wbr></wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1862004299%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="1862004299%2FProperties%2F168881717" anchor-label="cardAddedState" id="1862004299%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="card-added-state.html">cardAddedState</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/SharedFlow///PointingToDeclaration/">SharedFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kalbe.cakraloyalty.presentation.state/-ui-state-wrapper/index.html">UiStateWrapper</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.model.merchant/Card///PointingToDeclaration/">Card</span><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-393940749%2FProperties%2F168881717" anchor-label="cardNumber" id="-393940749%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="card-number.html"><span>card</span><wbr></wbr><span><span>Number</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-393940749%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="-393940749%2FProperties%2F168881717" anchor-label="cardNumber" id="-393940749%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="card-number.html">cardNumber</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-764266669%2FProperties%2F168881717" anchor-label="chakraContent" id="-764266669%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="chakra-content.html"><span>chakra</span><wbr></wbr><span><span>Content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-764266669%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="-764266669%2FProperties%2F168881717" anchor-label="chakraContent" id="-764266669%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="chakra-content.html">chakraContent</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/SharedFlow///PointingToDeclaration/">SharedFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kalbe.cakraloyalty.presentation.state/-ui-state-wrapper/index.html">UiStateWrapper</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.model.content/ChakraContent///PointingToDeclaration/">ChakraContent</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1494188548%2FProperties%2F168881717" anchor-label="clientApiKey" id="-1494188548%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="client-api-key.html"><span>client</span><wbr></wbr><span>Api</span><wbr></wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1494188548%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="-1494188548%2FProperties%2F168881717" anchor-label="clientApiKey" id="-1494188548%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="client-api-key.html">clientApiKey</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="32176406%2FProperties%2F168881717" anchor-label="clientName" id="32176406%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="client-name.html"><span>client</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="32176406%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="32176406%2FProperties%2F168881717" anchor-label="clientName" id="32176406%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="client-name.html">clientName</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1523730616%2FProperties%2F168881717" anchor-label="clientState" id="-1523730616%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="client-state.html"><span>client</span><wbr></wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1523730616%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="-1523730616%2FProperties%2F168881717" anchor-label="clientState" id="-1523730616%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="client-state.html">clientState</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/SharedFlow///PointingToDeclaration/">SharedFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kalbe.cakraloyalty.presentation.state/-ui-state-wrapper/index.html">UiStateWrapper</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.model.merchant/Card///PointingToDeclaration/">Card</span><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="799575350%2FProperties%2F168881717" anchor-label="contactsOtp" id="799575350%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="contacts-otp.html"><span>contacts</span><wbr></wbr><span><span>Otp</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="799575350%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="799575350%2FProperties%2F168881717" anchor-label="contactsOtp" id="799575350%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="contacts-otp.html">contactsOtp</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-606758970%2FProperties%2F168881717" anchor-label="listMerchant" id="-606758970%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="list-merchant.html"><span>list</span><wbr></wbr><span><span>Merchant</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-606758970%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="-606758970%2FProperties%2F168881717" anchor-label="listMerchant" id="-606758970%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="list-merchant.html">listMerchant</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/SharedFlow///PointingToDeclaration/">SharedFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.model.merchant/Merchant///PointingToDeclaration/">Merchant</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-290838013%2FProperties%2F168881717" anchor-label="listMerchantState" id="-290838013%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="list-merchant-state.html"><span>list</span><wbr></wbr><span>Merchant</span><wbr></wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-290838013%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="-290838013%2FProperties%2F168881717" anchor-label="listMerchantState" id="-290838013%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="list-merchant-state.html">listMerchantState</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/SharedFlow///PointingToDeclaration/">SharedFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kalbe.cakraloyalty.presentation.state/-ui-state-wrapper/index.html">UiStateWrapper</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.model.merchant/Merchant///PointingToDeclaration/">Merchant</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-363225637%2FProperties%2F168881717" anchor-label="loginMemberCard" id="-363225637%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="login-member-card.html"><span>login</span><wbr></wbr><span>Member</span><wbr></wbr><span><span>Card</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-363225637%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="-363225637%2FProperties%2F168881717" anchor-label="loginMemberCard" id="-363225637%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="login-member-card.html">loginMemberCard</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/SharedFlow///PointingToDeclaration/">SharedFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kalbe.cakraloyalty.presentation.state/-ui-state-wrapper/index.html">UiStateWrapper</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.kalbe.cakraloyalty.core.data.source.remote.response.user.card.login/LoginCardData///PointingToDeclaration/">LoginCardData</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1019609439%2FProperties%2F168881717" anchor-label="memberContacts" id="1019609439%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="member-contacts.html"><span>member</span><wbr></wbr><span><span>Contacts</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1019609439%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="1019609439%2FProperties%2F168881717" anchor-label="memberContacts" id="1019609439%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="member-contacts.html">memberContacts</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/SharedFlow///PointingToDeclaration/">SharedFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kalbe.cakraloyalty.presentation.state/-ui-state-wrapper/index.html">UiStateWrapper</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.kalbe.cakraloyalty.core.data.source.remote.response.brand.contact/MemberContactsData///PointingToDeclaration/">MemberContactsData</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1961746110%2FProperties%2F168881717" anchor-label="otpWithExpire" id="1961746110%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="otp-with-expire.html"><span>otp</span><wbr></wbr><span>With</span><wbr></wbr><span><span>Expire</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1961746110%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="1961746110%2FProperties%2F168881717" anchor-label="otpWithExpire" id="1961746110%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="otp-with-expire.html">otpWithExpire</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/SharedFlow///PointingToDeclaration/">SharedFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kalbe.cakraloyalty.presentation.state/-ui-state-wrapper/index.html">UiStateWrapper</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.kalbe.cakraloyalty.core.data.source.remote.response.auth.otp/SendOtpData///PointingToDeclaration/">SendOtpData</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="480294609%2FProperties%2F168881717" anchor-label="resetPasswordWithOtp" id="480294609%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="reset-password-with-otp.html"><span>reset</span><wbr></wbr><span>Password</span><wbr></wbr><span>With</span><wbr></wbr><span><span>Otp</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="480294609%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="480294609%2FProperties%2F168881717" anchor-label="resetPasswordWithOtp" id="480294609%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="reset-password-with-otp.html">resetPasswordWithOtp</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/SharedFlow///PointingToDeclaration/">SharedFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kalbe.cakraloyalty.presentation.state/-ui-state-wrapper/index.html">UiStateWrapper</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.kalbe.cakraloyalty.core.data.source.remote.response.auth.resetpass/ResetPassData///PointingToDeclaration/">ResetPassData</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="tabbedcontent">Extensions</h2>
+      <div class="table" data-togglable="Extensions"><a data-name="-1177813727%2FExtensions%2F168881717" anchor-label="collectLifecycleFlow" id="-1177813727%2FExtensions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.kalbe.cakraloyalty.utils/collect-lifecycle-flow.html"><span>collect</span><wbr></wbr><span>Lifecycle</span><wbr></wbr><span><span>Flow</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1177813727%2FExtensions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kalbe.cakraloyalty.utils/collect-lifecycle-flow.html">T</a><span class="token operator">&gt; </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel.html">ViewModel</a><span class="token punctuation">.</span><a href="../../com.kalbe.cakraloyalty.utils/collect-lifecycle-flow.html"><span class="token function">collectLifecycleFlow</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">flow<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kalbe.cakraloyalty.utils/collect-lifecycle-flow.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">collect<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/FlowCollector///PointingToDeclaration/">FlowCollector</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kalbe.cakraloyalty.utils/collect-lifecycle-flow.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Job///PointingToDeclaration/">Job</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

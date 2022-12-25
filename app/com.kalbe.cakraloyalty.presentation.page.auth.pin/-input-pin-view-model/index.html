@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>InputPinViewModel</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>app</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="app::com.kalbe.cakraloyalty.presentation.page.auth.pin/InputPinViewModel///PointingToDeclaration//168881717">
+  <div class="breadcrumbs"><a href="../../../index.html">app</a><span class="delimiter">/</span><a href="../index.html">com.kalbe.cakraloyalty.presentation.page.auth.pin</a><span class="delimiter">/</span><span class="current">InputPinViewModel</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Input</span><wbr></wbr><span>Pin</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Model</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">InputPinViewModel</a> <span><span class="token annotation builtin">@</span><span data-unresolved-link="javax.inject/Inject///PointingToDeclaration/"><span class="token annotation builtin">Inject</span></span> </span><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sessionManager<span class="token operator">: </span><span data-unresolved-link="com.kalbe.cakraloyalty.core.data.source.local.session/SessionManager///PointingToDeclaration/">SessionManager</span><span class="token punctuation">, </span></span><span class="parameter ">authRepository<span class="token operator">: </span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.repository/IAuthRepository///PointingToDeclaration/">IAuthRepository</span></span></span><span class="token punctuation">)</span> : <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel.html">ViewModel</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Extensions">Extensions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="-9831794%2FConstructors%2F168881717" anchor-label="InputPinViewModel" id="-9831794%2FConstructors%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-input-pin-view-model.html"><span>Input</span><wbr></wbr><span>Pin</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-9831794%2FConstructors%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="javax.inject/Inject///PointingToDeclaration/"><span class="token annotation builtin">Inject</span></span></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="-input-pin-view-model.html"><span class="token function">InputPinViewModel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sessionManager<span class="token operator">: </span><span data-unresolved-link="com.kalbe.cakraloyalty.core.data.source.local.session/SessionManager///PointingToDeclaration/">SessionManager</span><span class="token punctuation">, </span></span><span class="parameter ">authRepository<span class="token operator">: </span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.repository/IAuthRepository///PointingToDeclaration/">IAuthRepository</span></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="264516373%2FFunctions%2F168881717" anchor-label="addCloseable" id="264516373%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.kalbe.cakraloyalty.presentation.page.splash/-splash-view-model/index.html#264516373%2FFunctions%2F168881717"><span>add</span><wbr></wbr><span><span>Closeable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="264516373%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.kalbe.cakraloyalty.presentation.page.splash/-splash-view-model/index.html#264516373%2FFunctions%2F168881717"><span class="token function">addCloseable</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a> </span>p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1387427133%2FFunctions%2F168881717" anchor-label="addLastDigitPin" id="1387427133%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="add-last-digit-pin.html"><span>add</span><wbr></wbr><span>Last</span><wbr></wbr><span>Digit</span><wbr></wbr><span><span>Pin</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1387427133%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-last-digit-pin.html"><span class="token function">addLastDigitPin</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1260946132%2FFunctions%2F168881717" anchor-label="clearPin" id="-1260946132%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="clear-pin.html"><span>clear</span><wbr></wbr><span><span>Pin</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1260946132%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="clear-pin.html"><span class="token function">clearPin</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="920138666%2FFunctions%2F168881717" anchor-label="logout" id="920138666%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="logout.html"><span><span>logout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="920138666%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="logout.html"><span class="token function">logout</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="898283826%2FFunctions%2F168881717" anchor-label="removeLastDigitPin" id="898283826%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="remove-last-digit-pin.html"><span>remove</span><wbr></wbr><span>Last</span><wbr></wbr><span>Digit</span><wbr></wbr><span><span>Pin</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="898283826%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-last-digit-pin.html"><span class="token function">removeLastDigitPin</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1754965275%2FFunctions%2F168881717" anchor-label="setInputOtpUiState" id="1754965275%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-input-otp-ui-state.html"><span>set</span><wbr></wbr><span>Input</span><wbr></wbr><span>Otp</span><wbr></wbr><span>Ui</span><wbr></wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1754965275%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-input-otp-ui-state.html"><span class="token function">setInputOtpUiState</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">inputOtpUi<span class="token operator">: </span><a href="../../com.kalbe.cakraloyalty.presentation.state/-input-otp-ui-state/index.html">InputOtpUiState</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-302052645%2FFunctions%2F168881717" anchor-label="setInputPinUiState" id="-302052645%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-input-pin-ui-state.html"><span>set</span><wbr></wbr><span>Input</span><wbr></wbr><span>Pin</span><wbr></wbr><span>Ui</span><wbr></wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-302052645%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-input-pin-ui-state.html"><span class="token function">setInputPinUiState</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../com.kalbe.cakraloyalty.presentation.state/-input-pin-ui-state/index.html">InputPinUiState</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1637197414%2FFunctions%2F168881717" anchor-label="setIsInputPinRegDone" id="-1637197414%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-is-input-pin-reg-done.html"><span>set</span><wbr></wbr><span>Is</span><wbr></wbr><span>Input</span><wbr></wbr><span>Pin</span><wbr></wbr><span>Reg</span><wbr></wbr><span><span>Done</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1637197414%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-is-input-pin-reg-done.html"><span class="token function">setIsInputPinRegDone</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="135541644%2FFunctions%2F168881717" anchor-label="setLatitude" id="135541644%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-latitude.html"><span>set</span><wbr></wbr><span><span>Latitude</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="135541644%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-latitude.html"><span class="token function">setLatitude</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1955671741%2FFunctions%2F168881717" anchor-label="setLongitude" id="1955671741%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-longitude.html"><span>set</span><wbr></wbr><span><span>Longitude</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1955671741%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-longitude.html"><span class="token function">setLongitude</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="936312586%2FFunctions%2F168881717" anchor-label="setReferralCode" id="936312586%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-referral-code.html"><span>set</span><wbr></wbr><span>Referral</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="936312586%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-referral-code.html"><span class="token function">setReferralCode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">code<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1677992413%2FFunctions%2F168881717" anchor-label="setTriggerCheckout" id="1677992413%2FFunctions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-trigger-checkout.html"><span>set</span><wbr></wbr><span>Trigger</span><wbr></wbr><span><span>Checkout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1677992413%2FFunctions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-trigger-checkout.html"><span class="token function">setTriggerCheckout</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">state<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-796905201%2FProperties%2F168881717" anchor-label="inputPinType" id="-796905201%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="input-pin-type.html"><span>input</span><wbr></wbr><span>Pin</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-796905201%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="-796905201%2FProperties%2F168881717" anchor-label="inputPinType" id="-796905201%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="input-pin-type.html">inputPinType</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kalbe.cakraloyalty.presentation.state/-input-pin-ui-state/index.html">InputPinUiState</a><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1755260244%2FProperties%2F168881717" anchor-label="isChangePinSuccess" id="-1755260244%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-change-pin-success.html"><span>is</span><wbr></wbr><span>Change</span><wbr></wbr><span>Pin</span><wbr></wbr><span><span>Success</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1755260244%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="-1755260244%2FProperties%2F168881717" anchor-label="isChangePinSuccess" id="-1755260244%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-change-pin-success.html">isChangePinSuccess</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2047520666%2FProperties%2F168881717" anchor-label="isFullNewPin" id="-2047520666%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-full-new-pin.html"><span>is</span><wbr></wbr><span>Full</span><wbr></wbr><span>New</span><wbr></wbr><span><span>Pin</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2047520666%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="-2047520666%2FProperties%2F168881717" anchor-label="isFullNewPin" id="-2047520666%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-full-new-pin.html">isFullNewPin</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-338393979%2FProperties%2F168881717" anchor-label="isInputPinRegDone" id="-338393979%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-input-pin-reg-done.html"><span>is</span><wbr></wbr><span>Input</span><wbr></wbr><span>Pin</span><wbr></wbr><span>Reg</span><wbr></wbr><span><span>Done</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-338393979%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="-338393979%2FProperties%2F168881717" anchor-label="isInputPinRegDone" id="-338393979%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-input-pin-reg-done.html">isInputPinRegDone</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="330518964%2FProperties%2F168881717" anchor-label="isLoading" id="330518964%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-loading.html"><span>is</span><wbr></wbr><span><span>Loading</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="330518964%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="330518964%2FProperties%2F168881717" anchor-label="isLoading" id="330518964%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-loading.html">isLoading</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1026806928%2FProperties%2F168881717" anchor-label="isRegisterSuccess" id="1026806928%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-register-success.html"><span>is</span><wbr></wbr><span>Register</span><wbr></wbr><span><span>Success</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1026806928%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="1026806928%2FProperties%2F168881717" anchor-label="isRegisterSuccess" id="1026806928%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-register-success.html">isRegisterSuccess</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2035826611%2FProperties%2F168881717" anchor-label="isResetPinSuccess" id="2035826611%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-reset-pin-success.html"><span>is</span><wbr></wbr><span>Reset</span><wbr></wbr><span>Pin</span><wbr></wbr><span><span>Success</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2035826611%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="2035826611%2FProperties%2F168881717" anchor-label="isResetPinSuccess" id="2035826611%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-reset-pin-success.html">isResetPinSuccess</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1134839553%2FProperties%2F168881717" anchor-label="isSamePin" id="1134839553%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-same-pin.html"><span>is</span><wbr></wbr><span>Same</span><wbr></wbr><span><span>Pin</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1134839553%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="1134839553%2FProperties%2F168881717" anchor-label="isSamePin" id="1134839553%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-same-pin.html">isSamePin</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1973823811%2FProperties%2F168881717" anchor-label="isVerifyPinSuccess" id="1973823811%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-verify-pin-success.html"><span>is</span><wbr></wbr><span>Verify</span><wbr></wbr><span>Pin</span><wbr></wbr><span><span>Success</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1973823811%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="1973823811%2FProperties%2F168881717" anchor-label="isVerifyPinSuccess" id="1973823811%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-verify-pin-success.html">isVerifyPinSuccess</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1948521676%2FProperties%2F168881717" anchor-label="loginState" id="1948521676%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="login-state.html"><span>login</span><wbr></wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1948521676%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="1948521676%2FProperties%2F168881717" anchor-label="loginState" id="1948521676%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="login-state.html">loginState</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/SharedFlow///PointingToDeclaration/">SharedFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.kalbe.cakraloyalty.core.domain.model.auth/LoginResult///PointingToDeclaration/">LoginResult</span><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1101862102%2FProperties%2F168881717" anchor-label="messageState" id="-1101862102%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="message-state.html"><span>message</span><wbr></wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1101862102%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="-1101862102%2FProperties%2F168881717" anchor-label="messageState" id="-1101862102%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="message-state.html">messageState</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/SharedFlow///PointingToDeclaration/">SharedFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kalbe.cakraloyalty.presentation.state/-message-ui-state/index.html">MessageUiState</a><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1535099121%2FProperties%2F168881717" anchor-label="pin" id="1535099121%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="pin.html"><span><span>pin</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1535099121%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="1535099121%2FProperties%2F168881717" anchor-label="pin" id="1535099121%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="pin.html">pin</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-409581048%2FProperties%2F168881717" anchor-label="triggerCheckout" id="-409581048%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="trigger-checkout.html"><span>trigger</span><wbr></wbr><span><span>Checkout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-409581048%2FProperties%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><a data-name="-409581048%2FProperties%2F168881717" anchor-label="triggerCheckout" id="-409581048%2FProperties%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="trigger-checkout.html">triggerCheckout</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="tabbedcontent">Extensions</h2>
+      <div class="table" data-togglable="Extensions"><a data-name="-1177813727%2FExtensions%2F168881717" anchor-label="collectLifecycleFlow" id="-1177813727%2FExtensions%2F168881717" data-filterable-set=":app:dokkaHtml/staging"></a>
+        <div class="table-row" data-filterable-current=":app:dokkaHtml/staging" data-filterable-set=":app:dokkaHtml/staging">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.kalbe.cakraloyalty.utils/collect-lifecycle-flow.html"><span>collect</span><wbr></wbr><span>Lifecycle</span><wbr></wbr><span><span>Flow</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1177813727%2FExtensions%2F168881717"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/staging"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kalbe.cakraloyalty.utils/collect-lifecycle-flow.html">T</a><span class="token operator">&gt; </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel.html">ViewModel</a><span class="token punctuation">.</span><a href="../../com.kalbe.cakraloyalty.utils/collect-lifecycle-flow.html"><span class="token function">collectLifecycleFlow</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">flow<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kalbe.cakraloyalty.utils/collect-lifecycle-flow.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">collect<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/FlowCollector///PointingToDeclaration/">FlowCollector</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.kalbe.cakraloyalty.utils/collect-lifecycle-flow.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Job///PointingToDeclaration/">Job</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
